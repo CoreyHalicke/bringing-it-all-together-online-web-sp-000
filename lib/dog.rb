@@ -60,7 +60,7 @@ class Dog
   end
 
   def self.find_or_create_by
-    
+    binding.pry
   end
 
   def self.find_by_name
