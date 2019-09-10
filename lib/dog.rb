@@ -63,6 +63,7 @@ class Dog
     sql = "SELECT * FROM dogs WHERE name = ? AND breed = ?"
     result = DB[:conn].execute(sql, name, breed)[0]
     if result[0]
+      result
     else
       binding.pry
 
