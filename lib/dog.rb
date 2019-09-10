@@ -65,6 +65,7 @@ class Dog
     if result[0]
       self.new_from_db(result)
       binding.pry
+    end
   end
 
   def self.find_by_name
