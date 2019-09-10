@@ -64,10 +64,7 @@ class Dog
     result = DB[:conn].execute(sql, name, breed)[0]
     if result[0]
       self.new_from_db(result)
-    else
       binding.pry
-
-    end
   end
 
   def self.find_by_name
