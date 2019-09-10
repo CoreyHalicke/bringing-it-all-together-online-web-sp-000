@@ -62,8 +62,11 @@ class Dog
   def self.find_or_create_by(name:, breed:)
     sql = "SELECT * FROM dogs WHERE name = ? AND breed = ?"
     result = DB[:conn].execute(sql, name, breed)[0]
-    
-    binding.pry
+    if result[0]
+    else
+      binding.pry
+
+    end
   end
 
   def self.find_by_name
